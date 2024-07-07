@@ -21,16 +21,6 @@ from openai import OpenAI
 
 load_dotenv()
 
-is_logged_in = False
-
-if 'is_logged_in' not in st.session_state:
-    st.session_state['is_logged_in'] = False
-
-
-# Helper function to format the selectbox options for places
-def format_select_option(pair):
-    return f"{pair[0]} ({pair[1]})"
-
 def home_page():
     # Set background image
     st.markdown("# MovieMatch")
@@ -43,7 +33,7 @@ def chat_interface_page():
 
     st.markdown("# MovieMatch")
     st.subheader('Your friendly guide to all your queries!🌟')
-    st.text('We can help with any questions about movies and provide recommendations based on your favorite movies, actors, or even specific plot elements!')
+    st.text('Ask us anything about movies and get tailored recommendations based on your viewing mood!')
 
     # Initialize chat history
     if "messages" not in st.session_state:
@@ -81,7 +71,7 @@ pages = {
 # Define the Streamlit app
 def main():
     st.set_page_config(
-        page_title="CineSphere",page_icon=":popcorn:" ,layout="wide"
+        page_title="MovieMatch",page_icon=":popcorn:" ,layout="wide"
     )
 
     page = pages['Question? Chat it out']
