@@ -5,6 +5,8 @@
 
 ## Welcome back to MovieMatch -  Your Personal Movie Guide
 
+[Preview of Latest Upates to MovieMatch](https://youtu.be/r9UkfIwdzUA)
+
 ## What's New?
 
 Optimized with RAG: We've taken MovieMatch to the next level by incorporating Retrieval-Augmented Generation (RAG). This means more powerful and precise movie recommendations using an enhanced search engine.
@@ -26,7 +28,7 @@ Advanced Search Functionality: Whether you're in the mood for a romantic classic
 ### Get Started
 1. Clone the repository
 
-2. Download Neo4j Desktop and install the [GenAI Stack](https://neo4j.com/generativeai/) which can be used to Facilitate RAG.
+2. Download Neo4j Desktop and install the [GenAI Stack](https://neo4j.com/generativeai/) which can be used to Facilitate RAG. Drop in an [email](abhishekshankar79@yahoo.com) to get the dataset. 
 
 3. Create a python environment and install the requirements.txt
 
