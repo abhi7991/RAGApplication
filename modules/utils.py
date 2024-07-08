@@ -60,8 +60,11 @@ def chat_bot(query):
     functions = [format_tool_to_openai_function(f) for f in tools]
     model = ChatOpenAI(temperature=0).bind(functions=functions)
     memory = ConversationBufferMemory(return_messages=True,memory_key="chat_history")
+
+    promptengg = "You are a helpful assistant and you shouldnt talk about anything except World Cinema. Only respond to queries related to movies, movie recommendations, or movie genres"
+
     prompt = ChatPromptTemplate.from_messages([
-        ("system", "You are a helpful assistant"),
+        ("system", promptengg),
         MessagesPlaceholder(variable_name="chat_history"),
         ("user", "{input}"),
         MessagesPlaceholder(variable_name="agent_scratchpad")
